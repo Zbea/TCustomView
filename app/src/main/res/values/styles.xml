@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomCircleView"><!--切角类型-->
+        <attr name="type">
+            <enum name="circle" value="0"></enum>
+            <enum name="round" value="1"></enum>
+        </attr>
+        <attr name="radius" format="dimension"></attr><!--圆角弧度大小-->
+        <attr name="borderWidth" format="dimension"></attr><!--边框宽度-->
+        <attr name="borderColor" format="color"></attr><!--边框颜色-->
+    </declare-styleable>
+
+</resources>

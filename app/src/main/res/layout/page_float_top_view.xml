@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFloatTopView
+        android:id="@+id/customFloatView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="顶部信息"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="顶部信息"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="顶部信息"/>
+
+            <LinearLayout
+                android:id="@+id/containLine1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/topView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f1f1f1">
+
+                    <Button
+                        android:id="@+id/addBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="50dp"
+                        android:text="加入购物车"/>
+
+                    <Button
+                        android:id="@+id/buyBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50dp"
+                        android:text="立即购买"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#666333"
+                ></View>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#333666"
+                ></View>
+
+            </LinearLayout>
+        </view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFloatTopView>
+
+    <LinearLayout
+        android:id="@+id/containLine"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</RelativeLayout>

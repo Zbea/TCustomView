@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/page_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:clipChildren="false"
+    android:background="@android:color/white">
+
+    <view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomScaleViewPager
+        android:id="@+id/customScaleView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:clipChildren="false"
+        android:overScrollMode="never"/>
+
+
+</LinearLayout>

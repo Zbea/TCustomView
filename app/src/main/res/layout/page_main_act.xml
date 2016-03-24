@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFlowView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    <Button
+        android:id="@+id/customErrorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="#333333"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:background="@drawable/flow_bg_shape"
+        android:text="错误动画View"/>
+
+    <Button
+        android:id="@+id/customSuccessBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="#333333"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:background="@drawable/flow_bg_shape"
+        android:text="成功动画View"/>
+
+    <Button
+        android:id="@+id/customFlowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="#333333"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:background="@drawable/flow_bg_shape"
+        android:text="流布局View"/>
+
+        <Button
+            android:id="@+id/customCircleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#333333"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/flow_bg_shape"
+            android:text="自定义切园"/>
+
+        <Button
+            android:id="@+id/customFloatTopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#333333"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/flow_bg_shape"
+            android:text="滑动漂浮顶部"/>
+
+        <Button
+            android:id="@+id/customWaterfallBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#333333"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/flow_bg_shape"
+            android:text="瀑布流"/>
+
+        <Button
+            android:id="@+id/customScaleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#333333"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/flow_bg_shape"
+            android:text="土巴兔缩放view"/>
+
+</view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFlowView>
+
+    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/my_image_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--fresco:viewAspectRatio="1.33"-->
+        <!--fresco:roundedCornerRadius="10dp"-->
+        <!--fresco:roundingBorderWidth="2dp"-->
+        <!--fresco:roundingBorderColor="@android:color/black"-->
+        <!--fresco:placeholderImage="@drawable/ic_launcher"-->
+        <!--/>-->
+
+</LinearLayout>

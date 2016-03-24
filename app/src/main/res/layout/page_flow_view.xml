@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFlowView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/flow_bg_shape"
+            android:textColor="#333333"
+            android:text="TextView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/flow_bg_shape"
+            android:textColor="#333333"
+            android:text="CustomFlowView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/flow_bg_shape"
+            android:textColor="#333333"
+            android:text="CustomSuccessView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/flow_bg_shape"
+            android:textColor="#333333"
+            android:text="CustomErrorView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/flow_bg_shape"
+            android:textColor="#333333"
+            android:text="Buttou"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/flow_bg_shape"
+            android:textColor="#333333"
+            android:text="ImageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/flow_bg_shape"
+            android:textColor="#333333"
+            android:text="EditText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/flow_bg_shape"
+            android:textColor="#333333"
+            android:text="View"/>
+
+    </view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFlowView>
+
+</LinearLayout>
