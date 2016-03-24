@@ -80,6 +80,7 @@ public class ScaleViewPager extends Activity
     }
 
 
+
     private void initData() {
 
         list.add(R.drawable.style_xiandai);
