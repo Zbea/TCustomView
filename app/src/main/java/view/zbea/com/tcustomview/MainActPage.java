@@ -13,7 +13,8 @@ import android.widget.Toast;
 public class MainActPage extends Activity {
 
     private long mtimes;
-    private Button errorBtn,successBtn,flowBtn,circleBtn,floatBtn,waterfallBtn,scaleViewBtn;
+    private Button errorBtn,successBtn,flowBtn,circleBtn,floatBtn,waterfallBtn,scaleViewBtn
+            ,refreshBtn;
 
 
 
@@ -46,6 +47,8 @@ public class MainActPage extends Activity {
         scaleViewBtn=(Button)findViewById(R.id.customScaleBtn);
         scaleViewBtn.setOnClickListener(onClickListener);
 
+        refreshBtn=(Button)findViewById(R.id.customRefreshListViewBtn);
+        refreshBtn.setOnClickListener(onClickListener);
 
 //        Uri uri = Uri.parse("http://img.gaoxiaogif.cn/GaoxiaoGiffiles/images/2015/06/25/shuaixiachezuodengzishang.gif");
 //        SimpleDraweeView draweeView = (SimpleDraweeView) findViewById(R.id.my_image_view);
@@ -99,6 +102,11 @@ public class MainActPage extends Activity {
             if (v==scaleViewBtn)
             {
                 Intent flow=new Intent(MainActPage.this,ScaleViewPager.class);
+                startActivity(flow);
+            }
+            if (v==refreshBtn)
+            {
+                Intent flow=new Intent(MainActPage.this,RefreshListPage.class);
                 startActivity(flow);
             }
         }

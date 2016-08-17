@@ -2,4 +2,10 @@
 <resources>
 
     <color name="borderColor">#333333</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#ff6262</color>
+    <color name="yellow">#FD783A</color>
+    <color name="black">#000000</color>
+    <color name="green">#3fcccb</color>
+    <color name="gray">#dddddd</color>
 </resources>

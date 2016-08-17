@@ -79,6 +79,16 @@
             android:background="@drawable/flow_bg_shape"
             android:text="土巴兔缩放view"/>
 
+        <Button
+            android:id="@+id/customRefreshListViewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#333333"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/flow_bg_shape"
+            android:text="下拉刷新上拉自动加载"/>
+
 </view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFlowView>
 
     <!--<com.facebook.drawee.view.SimpleDraweeView-->

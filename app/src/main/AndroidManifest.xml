@@ -31,6 +31,8 @@
         </activity>
         <activity android:name=".ScaleViewPager">
         </activity>
+        <activity android:name=".RefreshListPage">
+        </activity>
 
     </application>
 
