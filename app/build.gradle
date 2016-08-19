@@ -33,4 +33,5 @@ dependencies {
     // see changelog
     //        compile 'com.facebook.fresco:fresco:0.8.1+'
     compile files('libs/android-support-v4.jar')
+    compile files('libs/httpmime-4.3.6.jar')
 }
