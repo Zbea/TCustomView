@@ -1,4 +1,4 @@
-package view.zbea.com.tcustomview;
+package view.zbea.com.tcustomview.page;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,9 +8,10 @@ import android.view.Window;
 import java.util.ArrayList;
 import java.util.List;
 
+import view.zbea.com.tcustomview.R;
 import view.zbea.com.tcustomview.bean.ApkEntity;
 import view.zbea.com.tcustomview.adapter.MyAdapter;
-import view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.RefreshListView;
+import view.zbea.com.tcustomview.views.RefreshListView;
 
 /**
  * Created by ZBea on 16/3/16.下啦刷新上拉自动加载

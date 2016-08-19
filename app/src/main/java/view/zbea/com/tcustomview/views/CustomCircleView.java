@@ -1,4 +1,4 @@
-package view.zbea.com.tcustomview.view.zbea.com.tcustomview.views;
+package view.zbea.com.tcustomview.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;

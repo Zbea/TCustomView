@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFlowView
+    <view.zbea.com.tcustomview.views.CustomFlowView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
@@ -60,16 +60,6 @@
             android:text="滑动漂浮顶部"/>
 
         <Button
-            android:id="@+id/customWaterfallBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:textColor="#333333"
-            android:layout_margin="10dp"
-            android:textSize="14sp"
-            android:background="@drawable/flow_bg_shape"
-            android:text="瀑布流"/>
-
-        <Button
             android:id="@+id/customScaleBtn"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -89,7 +79,17 @@
             android:background="@drawable/flow_bg_shape"
             android:text="下拉刷新上拉自动加载"/>
 
-</view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFlowView>
+        <Button
+            android:id="@+id/customAutoViewPaperBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#333333"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/flow_bg_shape"
+            android:text="自动滑动ViewPaper"/>
+
+</view.zbea.com.tcustomview.views.CustomFlowView>
 
     <!--<com.facebook.drawee.view.SimpleDraweeView-->
         <!--android:id="@+id/my_image_view"-->

@@ -5,7 +5,7 @@
     android:background="@color/gray"
     tools:context=".MainActivity" >
 
-    <view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.RefreshListView
+    <view.zbea.com.tcustomview.views.RefreshListView
         android:id="@+id/listView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

@@ -9,8 +9,8 @@ import java.util.List;
 
 import view.zbea.com.tcustomview.R;
 import view.zbea.com.tcustomview.bean.ApkEntity;
-import view.zbea.com.tcustomview.utils.BaseListAdapter;
-import view.zbea.com.tcustomview.utils.ViewHolder;
+import view.zbea.com.tcustomview.base.BaseListAdapter;
+import view.zbea.com.tcustomview.base.ViewHolder;
 
 public class MyAdapter extends BaseListAdapter<ApkEntity>
 {

@@ -1,8 +1,10 @@
-package view.zbea.com.tcustomview;
+package view.zbea.com.tcustomview.page;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
+
+import view.zbea.com.tcustomview.R;
 
 /**
  * Created by ZBea on 16/1/12.流布局

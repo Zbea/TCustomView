@@ -5,12 +5,12 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomErrorView
+    <view.zbea.com.tcustomview.views.CustomErrorView
        android:id="@+id/customErrorView"
         android:layout_width="100dp"
         android:layout_height="100dp"/>
 
-    <view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomSuccessView
+    <view.zbea.com.tcustomview.views.CustomSuccessView
         android:id="@+id/customSuccessView"
         android:layout_width="100dp"
         android:layout_height="100dp"

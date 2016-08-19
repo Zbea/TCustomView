@@ -9,12 +9,20 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
 
+import view.zbea.com.tcustomview.page.AutoViewPagerPage;
+import view.zbea.com.tcustomview.page.CircleViewPage;
+import view.zbea.com.tcustomview.page.ErrorOrSuccessViewPage;
+import view.zbea.com.tcustomview.page.FloatTopViewPage;
+import view.zbea.com.tcustomview.page.FlowViewPage;
+import view.zbea.com.tcustomview.page.RefreshListPage;
+import view.zbea.com.tcustomview.page.ScaleViewPager;
+
 
 public class MainActPage extends Activity {
 
     private long mtimes;
-    private Button errorBtn,successBtn,flowBtn,circleBtn,floatBtn,waterfallBtn,scaleViewBtn
-            ,refreshBtn;
+    private Button errorBtn,successBtn,flowBtn,circleBtn,floatBtn,scaleViewBtn
+            ,refreshBtn,autoViewPagerBtn;
 
 
 
@@ -22,7 +30,7 @@ public class MainActPage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.page_main_act);
+        setContentView(R.layout.main_act);
 
 //        Fresco.initialize(this);
 
@@ -41,14 +49,17 @@ public class MainActPage extends Activity {
         floatBtn=(Button)findViewById(R.id.customFloatTopBtn);
         floatBtn.setOnClickListener(onClickListener);
 
-        waterfallBtn=(Button)findViewById(R.id.customWaterfallBtn);
-        waterfallBtn.setOnClickListener(onClickListener);
 
         scaleViewBtn=(Button)findViewById(R.id.customScaleBtn);
         scaleViewBtn.setOnClickListener(onClickListener);
 
         refreshBtn=(Button)findViewById(R.id.customRefreshListViewBtn);
         refreshBtn.setOnClickListener(onClickListener);
+
+        autoViewPagerBtn=(Button)findViewById(R.id.customAutoViewPaperBtn);
+        autoViewPagerBtn.setOnClickListener(onClickListener);
+
+
 
 //        Uri uri = Uri.parse("http://img.gaoxiaogif.cn/GaoxiaoGiffiles/images/2015/06/25/shuaixiachezuodengzishang.gif");
 //        SimpleDraweeView draweeView = (SimpleDraweeView) findViewById(R.id.my_image_view);
@@ -94,11 +105,6 @@ public class MainActPage extends Activity {
                 Intent flow=new Intent(MainActPage.this,FloatTopViewPage.class);
                 startActivity(flow);
             }
-            if (v==waterfallBtn)
-            {
-                Intent flow=new Intent(MainActPage.this,WaterfallViewPage.class);
-                startActivity(flow);
-            }
             if (v==scaleViewBtn)
             {
                 Intent flow=new Intent(MainActPage.this,ScaleViewPager.class);
@@ -107,6 +113,12 @@ public class MainActPage extends Activity {
             if (v==refreshBtn)
             {
                 Intent flow=new Intent(MainActPage.this,RefreshListPage.class);
+                startActivity(flow);
+            }
+
+            if (v==autoViewPagerBtn)
+            {
+                Intent flow=new Intent(MainActPage.this,AutoViewPagerPage.class);
                 startActivity(flow);
             }
         }
@@ -130,5 +142,13 @@ public class MainActPage extends Activity {
 
         }
         return true;
+    }
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        if (BaseApplication.newRequestQueue()!=null)
+            BaseApplication.newRequestQueue().cancelAll(BaseApplication.TAG);
     }
 }

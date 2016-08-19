@@ -1,4 +1,4 @@
-package view.zbea.com.tcustomview;
+package view.zbea.com.tcustomview.page;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,7 +11,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFloatTopView;
+import view.zbea.com.tcustomview.R;
+import view.zbea.com.tcustomview.views.CustomFloatTopView;
 
 /**
  * Created by ZBea on 16/1/12.漂浮顶部

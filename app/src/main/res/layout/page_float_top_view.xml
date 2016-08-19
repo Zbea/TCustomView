@@ -5,7 +5,7 @@
 
 
 
-    <view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFloatTopView
+    <view.zbea.com.tcustomview.views.CustomFloatTopView
         android:id="@+id/customFloatView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -80,7 +80,7 @@
                 ></View>
 
             </LinearLayout>
-        </view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFloatTopView>
+        </view.zbea.com.tcustomview.views.CustomFloatTopView>
 
     <LinearLayout
         android:id="@+id/containLine"

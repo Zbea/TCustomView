@@ -22,7 +22,7 @@ public class NetUtils {
 	 * @param context
 	 * @return
 	 */
-	public static boolean isConnected(Context context) {
+	public static boolean isNetStatus(Context context) {
 		ConnectivityManager connectivity = (ConnectivityManager) context
 				.getSystemService(Context.CONNECTIVITY_SERVICE);
 

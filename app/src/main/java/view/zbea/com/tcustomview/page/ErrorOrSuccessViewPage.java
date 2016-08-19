@@ -1,12 +1,13 @@
-package view.zbea.com.tcustomview;
+package view.zbea.com.tcustomview.page;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 
-import view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomErrorView;
-import view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomSuccessView;
+import view.zbea.com.tcustomview.R;
+import view.zbea.com.tcustomview.views.CustomErrorView;
+import view.zbea.com.tcustomview.views.CustomSuccessView;
 
 /**
  * Created by ZBea on 16/1/11.自定义错误动画页面

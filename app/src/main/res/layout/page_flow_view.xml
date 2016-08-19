@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFlowView
+    <view.zbea.com.tcustomview.views.CustomFlowView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -72,6 +72,6 @@
             android:textColor="#333333"
             android:text="View"/>
 
-    </view.zbea.com.tcustomview.view.zbea.com.tcustomview.views.CustomFlowView>
+    </view.zbea.com.tcustomview.views.CustomFlowView>
 
 </LinearLayout>
