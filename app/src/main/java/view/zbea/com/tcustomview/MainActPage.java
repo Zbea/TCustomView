@@ -1,14 +1,12 @@
 package view.zbea.com.tcustomview;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
 
+import view.zbea.com.tcustomview.base.BaseActivity;
 import view.zbea.com.tcustomview.page.AutoViewPagerPage;
 import view.zbea.com.tcustomview.page.CircleViewPage;
 import view.zbea.com.tcustomview.page.ErrorOrSuccessViewPage;
@@ -16,23 +14,32 @@ import view.zbea.com.tcustomview.page.FloatTopViewPage;
 import view.zbea.com.tcustomview.page.FlowViewPage;
 import view.zbea.com.tcustomview.page.RefreshListPage;
 import view.zbea.com.tcustomview.page.ScaleViewPager;
+import view.zbea.com.tcustomview.views.TimerTextView;
 
 
-public class MainActPage extends Activity {
-
+public class MainActPage extends BaseActivity
+{
     private long mtimes;
     private Button errorBtn,successBtn,flowBtn,circleBtn,floatBtn,scaleViewBtn
             ,refreshBtn,autoViewPagerBtn;
 
 
+    @Override
+    public int setLayoutResId()
+    {
+        return R.layout.main_act;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.main_act);
+    public void initView()
+    {
+        super.initView();
+        //        Fresco.initialize(this);
 
-//        Fresco.initialize(this);
+
+        TimerTextView timerTextView=(TimerTextView)findViewById(R.id.tv_timer);
+        timerTextView.setTimes(2000000000);
+        timerTextView.start();
 
         errorBtn=(Button)findViewById(R.id.customErrorBtn);
         errorBtn.setOnClickListener(onClickListener);
@@ -69,8 +76,6 @@ public class MainActPage extends Activity {
 //                .setAutoPlayAnimations(true)
 //                .build();
 //        draweeView.setController(controller);
-
-
     }
 
     private View.OnClickListener onClickListener=new View.OnClickListener()

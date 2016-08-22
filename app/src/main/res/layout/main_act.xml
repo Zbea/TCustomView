@@ -9,6 +9,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
 
+        <view.zbea.com.tcustomview.views.TimerTextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/flow_bg_shape"
+            android:textColor="#333333"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            />
+
     <Button
         android:id="@+id/customErrorBtn"
         android:layout_width="wrap_content"
