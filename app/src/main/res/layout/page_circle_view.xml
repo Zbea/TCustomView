@@ -6,50 +6,67 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
+    <view.zbea.com.tcustomview.views.OverScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <view.zbea.com.tcustomview.views.CustomCircleView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            custom:type="circle"
-            custom:borderWidth="0dp"
-            custom:borderColor="@color/borderColor"
-            android:src="@drawable/iiii"/>
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="画园"/>
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <view.zbea.com.tcustomview.views.CustomCircleView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    custom:type="circle"
+                    custom:borderWidth="0dp"
+                    custom:borderColor="@color/borderColor"
+                    android:src="@drawable/iiii"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="画园"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <view.zbea.com.tcustomview.views.CustomCircleView
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    custom:type="round"
+                    custom:borderWidth="2dp"
+                    custom:borderColor="@color/borderColor"
+                    custom:radius="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iiii"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="切圆角"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
+    </view.zbea.com.tcustomview.views.OverScrollView>
 
-        <view.zbea.com.tcustomview.views.CustomCircleView
-            android:layout_width="100dp"
-            android:layout_height="60dp"
-            custom:type="round"
-            custom:borderWidth="2dp"
-            custom:borderColor="@color/borderColor"
-            custom:radius="10dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/iiii"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="切圆角"/>
-
-    </LinearLayout>
 
 </LinearLayout>
