@@ -99,6 +99,16 @@
             android:background="@drawable/flow_bg_shape"
             android:text="自动滑动ViewPaper"/>
 
+        <Button
+            android:id="@+id/customStepBar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#333333"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/flow_bg_shape"
+            android:text="类似物流bar"/>
+
 </view.zbea.com.tcustomview.views.CustomFlowView>
 
     <!--<com.facebook.drawee.view.SimpleDraweeView-->

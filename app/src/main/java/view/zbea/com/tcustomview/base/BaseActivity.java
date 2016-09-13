@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.Window;
 
+import butterknife.ButterKnife;
 import view.zbea.com.tcustomview.ExitApplication;
 
 /**
@@ -22,6 +23,8 @@ public class BaseActivity extends Activity
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(setLayoutResId());
+
+        ButterKnife.bind(this);
 
         mContext=BaseActivity.this;
         ExitApplication.getInstance().addActivity(this);
@@ -56,5 +59,10 @@ public class BaseActivity extends Activity
         return layoutResId;
     }
 
-
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        ButterKnife.unbind(this);
+    }
 }

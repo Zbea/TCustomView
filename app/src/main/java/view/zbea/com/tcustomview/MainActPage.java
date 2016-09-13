@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import butterknife.Bind;
 import view.zbea.com.tcustomview.base.BaseActivity;
 import view.zbea.com.tcustomview.page.AutoViewPagerPage;
 import view.zbea.com.tcustomview.page.CircleViewPage;
@@ -14,14 +15,33 @@ import view.zbea.com.tcustomview.page.FloatTopViewPage;
 import view.zbea.com.tcustomview.page.FlowViewPage;
 import view.zbea.com.tcustomview.page.RefreshListPage;
 import view.zbea.com.tcustomview.page.ScaleViewPager;
+import view.zbea.com.tcustomview.page.StepBarPage;
 import view.zbea.com.tcustomview.views.TimerTextView;
 
 
 public class MainActPage extends BaseActivity
 {
+    @Bind(R.id.tv_timer)
+    TimerTextView tvTimer;
+    @Bind(R.id.customErrorBtn)
+    Button customErrorBtn;
+    @Bind(R.id.customSuccessBtn)
+    Button customSuccessBtn;
+    @Bind(R.id.customFlowBtn)
+    Button customFlowBtn;
+    @Bind(R.id.customCircleBtn)
+    Button customCircleBtn;
+    @Bind(R.id.customFloatTopBtn)
+    Button customFloatTopBtn;
+    @Bind(R.id.customScaleBtn)
+    Button customScaleBtn;
+    @Bind(R.id.customRefreshListViewBtn)
+    Button customRefreshListViewBtn;
+    @Bind(R.id.customAutoViewPaperBtn)
+    Button customAutoViewPaperBtn;
+    @Bind(R.id.customStepBar)
+    Button customStepBar;
     private long mtimes;
-    private Button errorBtn,successBtn,flowBtn,circleBtn,floatBtn,scaleViewBtn
-            ,refreshBtn,autoViewPagerBtn;
 
 
     @Override
@@ -37,35 +57,27 @@ public class MainActPage extends BaseActivity
         //        Fresco.initialize(this);
 
 
-        TimerTextView timerTextView=(TimerTextView)findViewById(R.id.tv_timer);
-        timerTextView.setTimes(2000000000);
-        timerTextView.start();
+        tvTimer.setTimes(2000000000);
+        tvTimer.start();
 
-        errorBtn=(Button)findViewById(R.id.customErrorBtn);
-        errorBtn.setOnClickListener(onClickListener);
+        customErrorBtn.setOnClickListener(onClickListener);
 
-        successBtn=(Button)findViewById(R.id.customSuccessBtn);
-        successBtn.setOnClickListener(onClickListener);
+        customSuccessBtn.setOnClickListener(onClickListener);
 
-        flowBtn=(Button)findViewById(R.id.customFlowBtn);
-        flowBtn.setOnClickListener(onClickListener);
+        customFlowBtn.setOnClickListener(onClickListener);
 
-        circleBtn=(Button)findViewById(R.id.customCircleBtn);
-        circleBtn.setOnClickListener(onClickListener);
+        customCircleBtn.setOnClickListener(onClickListener);
 
-        floatBtn=(Button)findViewById(R.id.customFloatTopBtn);
-        floatBtn.setOnClickListener(onClickListener);
+        customFloatTopBtn.setOnClickListener(onClickListener);
 
 
-        scaleViewBtn=(Button)findViewById(R.id.customScaleBtn);
-        scaleViewBtn.setOnClickListener(onClickListener);
+        customScaleBtn.setOnClickListener(onClickListener);
 
-        refreshBtn=(Button)findViewById(R.id.customRefreshListViewBtn);
-        refreshBtn.setOnClickListener(onClickListener);
+        customRefreshListViewBtn.setOnClickListener(onClickListener);
 
-        autoViewPagerBtn=(Button)findViewById(R.id.customAutoViewPaperBtn);
-        autoViewPagerBtn.setOnClickListener(onClickListener);
+        customAutoViewPaperBtn.setOnClickListener(onClickListener);
 
+        customStepBar.setOnClickListener(onClickListener);
 
 
 //        Uri uri = Uri.parse("http://img.gaoxiaogif.cn/GaoxiaoGiffiles/images/2015/06/25/shuaixiachezuodengzishang.gif");
@@ -78,53 +90,58 @@ public class MainActPage extends BaseActivity
 //        draweeView.setController(controller);
     }
 
-    private View.OnClickListener onClickListener=new View.OnClickListener()
+    private View.OnClickListener onClickListener = new View.OnClickListener()
     {
         @Override
         public void onClick(View v)
         {
-            if (v==errorBtn)
+            if (v == customErrorBtn)
             {
-                Intent error=new Intent(MainActPage.this,ErrorOrSuccessViewPage.class);
+                Intent error = new Intent(MainActPage.this, ErrorOrSuccessViewPage.class);
                 error.setFlags(1);
                 startActivity(error);
             }
-            if (v==successBtn)
+            if (v == customSuccessBtn)
             {
-                Intent success=new Intent(MainActPage.this,ErrorOrSuccessViewPage.class);
+                Intent success = new Intent(MainActPage.this, ErrorOrSuccessViewPage.class);
                 success.setFlags(2);
                 startActivity(success);
             }
-            if (v==flowBtn)
+            if (v == customFlowBtn)
             {
-                Intent flow=new Intent(MainActPage.this,FlowViewPage.class);
+                Intent flow = new Intent(MainActPage.this, FlowViewPage.class);
                 startActivity(flow);
             }
-            if (v==circleBtn)
+            if (v == customCircleBtn)
             {
-                Intent flow=new Intent(MainActPage.this,CircleViewPage.class);
+                Intent flow = new Intent(MainActPage.this, CircleViewPage.class);
                 startActivity(flow);
             }
-            if (v==floatBtn)
+            if (v == customFloatTopBtn)
             {
-                Intent flow=new Intent(MainActPage.this,FloatTopViewPage.class);
+                Intent flow = new Intent(MainActPage.this, FloatTopViewPage.class);
                 startActivity(flow);
             }
-            if (v==scaleViewBtn)
+            if (v == customScaleBtn)
             {
-                Intent flow=new Intent(MainActPage.this,ScaleViewPager.class);
+                Intent flow = new Intent(MainActPage.this, ScaleViewPager.class);
                 startActivity(flow);
             }
-            if (v==refreshBtn)
+            if (v == customRefreshListViewBtn)
             {
-                Intent flow=new Intent(MainActPage.this,RefreshListPage.class);
+                Intent flow = new Intent(MainActPage.this, RefreshListPage.class);
                 startActivity(flow);
             }
 
-            if (v==autoViewPagerBtn)
+            if (v == customAutoViewPaperBtn)
             {
-                Intent flow=new Intent(MainActPage.this,AutoViewPagerPage.class);
+                Intent flow = new Intent(MainActPage.this, AutoViewPagerPage.class);
                 startActivity(flow);
+            }
+            if (v == customStepBar)
+            {
+                Intent stepbar = new Intent(MainActPage.this, StepBarPage.class);
+                startActivity(stepbar);
             }
         }
     };
@@ -133,14 +150,13 @@ public class MainActPage extends BaseActivity
     public boolean onKeyDown(int keyCode, KeyEvent event)
     {
 
-        if (keyCode==KeyEvent.KEYCODE_BACK)
+        if (keyCode == KeyEvent.KEYCODE_BACK)
         {
-            if(System.currentTimeMillis()-mtimes>2000)
+            if (System.currentTimeMillis() - mtimes > 2000)
             {
                 Toast.makeText(this, "再按一次退出", Toast.LENGTH_SHORT).show();
                 mtimes = System.currentTimeMillis();
-            }
-            else
+            } else
             {
                 finish();
             }
@@ -153,7 +169,9 @@ public class MainActPage extends BaseActivity
     protected void onDestroy()
     {
         super.onDestroy();
-        if (BaseApplication.newRequestQueue()!=null)
+        if (BaseApplication.newRequestQueue() != null)
             BaseApplication.newRequestQueue().cancelAll(BaseApplication.TAG);
     }
+
+
 }
