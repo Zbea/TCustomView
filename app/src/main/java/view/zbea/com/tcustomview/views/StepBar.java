@@ -104,6 +104,7 @@ import android.view.View;
             return;
         }
         this.mCompleteStep=mComplteStep;
+        invalidate();
     }
 
     /**

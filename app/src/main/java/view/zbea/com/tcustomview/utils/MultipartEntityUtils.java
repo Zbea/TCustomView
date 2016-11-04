@@ -29,6 +29,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.security.KeyStore;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -37,6 +38,8 @@ import java.util.Map.Entry;
  */
 public class MultipartEntityUtils
 {
+	//IdentityHashMap
+
 	// 设置URLConnection的连接超时
 	private final static int CONNET_TIMEOUT = 30 * 1000;
 	// 设置URLConnection的读取超时
@@ -58,13 +61,15 @@ public class MultipartEntityUtils
      *             请求头
      * @param params
      *            HTTP POST请求文本参数map集合
+	  * @param filesName
+	 *            HTTP POST请求文件参数名
      * @param files
      *            HTTP POST请求文件参数map集合
      * @return HTTP POST请求结果
      * @throws java.io.IOException
      */
-    public static void doMultipleFiles(final String urlStr, final Map<String, String> headers,final Map<String, String> params,
-                                 final Map<String, String> files, final OnResponseListener onResponseListener)
+    public static void doMultipleFiles(final String urlStr, final Map<String, String> headers, final Map<String, String> params,
+									   final String filesName, final List<String> files, final OnResponseListener onResponseListener)
     {
         new Thread()
         {
@@ -72,7 +77,7 @@ public class MultipartEntityUtils
             {
                 try
                 {
-                    String result = post(urlStr, headers,params,files);
+                    String result = post(urlStr, headers,params,filesName,files);
                     if (onResponseListener != null)
                     {
                         onResponseListener.onResponse(result);
@@ -125,7 +130,7 @@ public class MultipartEntityUtils
 
 
 	private static String post(String url,Map<String, String> headers, Map<String, String> params,
-			Map<String, String> files) throws IOException {
+							   String filesName, final List<String> files) throws IOException {
 		MultipartEntityBuilder multipartEntityBuilder = MultipartEntityBuilder
 				.create();
 		multipartEntityBuilder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
@@ -138,9 +143,9 @@ public class MultipartEntityUtils
 		}
 
 		if (files != null && !files.isEmpty()) {
-			for (Entry<String, String> entry : files.entrySet()) {
-				File file = new File(entry.getValue());
-				multipartEntityBuilder.addBinaryBody(entry.getKey(), file);
+			for (String  entry : files) {
+				File file = new File(entry);
+				multipartEntityBuilder.addBinaryBody(filesName, file);
 			}
 		}
 
