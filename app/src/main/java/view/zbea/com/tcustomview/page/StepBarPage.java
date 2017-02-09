@@ -38,6 +38,7 @@ public class StepBarPage extends BaseActivity
     }
 
 
+
     public void next(View view)
     {
         stepView.nextStep();
