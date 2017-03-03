@@ -11,7 +11,6 @@ import view.zbea.com.tcustomview.R;
  */
 public class CircleViewPage extends Activity
 {
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
