@@ -182,18 +182,10 @@ public class CustomBannerView extends FrameLayout
 
         viewPager = (ViewPager)view.findViewById(R.id.customVp);
 
-        if (imgs.size()>1)
-        {
-            dotsLine.setVisibility(View.VISIBLE);
-            adapter=new ImageLoopPagerAdapter();
-            viewPager.setOnPageChangeListener(new MyPageChangeListener());
-            viewPager.setAdapter(adapter);
-        }
-        else
-        {
-            dotsLine.setVisibility(View.GONE);
-            viewPager.setAdapter(new ImageAdapter());
-        }
+        dotsLine.setVisibility(View.VISIBLE);
+        adapter=new ImageLoopPagerAdapter();
+        viewPager.setOnPageChangeListener(new MyPageChangeListener());
+        viewPager.setAdapter(adapter);
 
     }
 
@@ -232,6 +224,8 @@ public class CustomBannerView extends FrameLayout
         @Override
         public int getCount()
         {
+            if (banners.size()==1)
+                return 1;
             return Integer.MAX_VALUE / 2;
         }
 
@@ -266,37 +260,6 @@ public class CustomBannerView extends FrameLayout
         public boolean isViewFromObject(View arg0, Object arg1)
         {
             return arg0 == arg1;
-        }
-    }
-
-    /**
-     * 单哥适配器
-     */
-    public class ImageAdapter extends PagerAdapter
-    {
-        @Override
-        public int getCount()
-        {
-            return banners.size();
-        }
-
-        @Override
-        public Object instantiateItem(ViewGroup container, int position)
-        {
-            container.addView(banners.get(position), 0);
-            return banners.get(position);
-        }
-
-        @Override
-        public void destroyItem(ViewGroup container, int position, Object object)
-        {
-            container.removeView(banners.get(position));
-        }
-
-        @Override
-        public boolean isViewFromObject(View view, Object o)
-        {
-            return view == o;
         }
     }
 
